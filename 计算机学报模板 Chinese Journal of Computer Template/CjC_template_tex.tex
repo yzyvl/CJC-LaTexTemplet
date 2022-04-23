@@ -1,0 +1,406 @@
+\documentclass[10.5pt,compsoc]{CjC}
+\usepackage{CJKutf8}
+%\usepackage{CJK}
+\usepackage{graphicx}
+\usepackage{footmisc}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage[noadjust]{cite}
+\usepackage{amsmath,amsthm}
+\usepackage{amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{ccaption}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{xcolor,stfloats}
+\usepackage{comment}
+\setcounter{page}{1}
+\graphicspath{{figures/}}
+\usepackage{cuted}%flushend,
+\usepackage{captionhack}
+\usepackage{epstopdf}
+%\usepackage{ccmap}
+%\CJKtilde
+%\usepackage{CJKpunct} 
+%\usepackage[lite,subscriptcorrection,slantedGreek,nofontinfo]{mtpro2}
+
+%===============================%
+
+%\firstfootname{ \quad \quad }
+\headevenname{\mbox{\quad} \hfill  \mbox{\zihao{-5}{\begin{CJK*}{GBK}{song}¼Æ\quad \quad Ëã\quad \quad »ú\quad \quad Ñ§\quad \quad ±¨\end{CJK*}} \hspace {50mm} \mbox{\begin{CJK*}{GBK}{song}2019 Äê\end{CJK*}}}}%
+\headoddname{\begin{CJK*}{GBK}{song}? ÆÚ \hfill
+×÷ÕßÐÕÃûµÈ£ºÂÛÎÄÌâÄ¿\end{CJK*}}%
+
+%footnote use of *
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\setcounter{footnote}{0}
+\renewcommand\footnotelayout{\zihao{5-}}
+
+\newtheoremstyle{mystyle}{0pt}{0pt}{\normalfont}{1em}{\bf}{}{1em}{}
+\theoremstyle{mystyle}
+\renewcommand\figurename{figure~}
+\renewcommand{\thesubfigure}{(\alph{subfigure})}
+\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\newcommand{\abc}{\color{white}\vrule width 2pt}
+\makeatletter
+\renewcommand{\@biblabel}[1]{[#1]\hfill}
+\makeatother
+\setlength\parindent{2em}
+%\renewcommand{\hth}{\begin{CJK*}{GBK}{hei}}
+%\renewcommand{\htss}{\begin{CJK*}{GBK}{song}}
+
+
+\begin{document}
+\hyphenpenalty=50000
+\makeatletter
+\newcommand\mysmall{\@setfontsize\mysmall{7}{9.5}}
+\newenvironment{tablehere}
+  {\def\@captype{table}}
+
+\let\temp\footnote
+\renewcommand \footnote[1]{\temp{\zihao{-5}#1}}
+
+
+\thispagestyle{plain}%
+\thispagestyle{empty}%
+\pagestyle{CjCheadings}
+
+\begin{table*}[!t]
+\vspace {-13mm}
+\begin{tabular}{p{168mm}}
+\zihao{5-}\begin{CJK*}{GBK}{song}
+µÚ??¾í\quad µÚ?ÆÚ \hfill ¼Æ\quad Ëã\quad »ú\quad Ñ§\quad ±¨\hfill Vol. ??  No. ?\end{CJK*}\\
+\zihao{5-}\begin{CJK*}{GBK}{song}
+20??Äê?ÔÂ \hfill CHINESE JOURNAL OF COMPUTERS \hfill ???. 20??\end{CJK*}\\
+\hline\\[-4.5mm]
+\hline\end{tabular}
+
+\centering
+\vspace {11mm}
+\begin{CJK}{GBK}{hei}
+{\zihao{2} ÌâÄ¿£¨ÖÐÓ¢ÎÄÌâÄ¿Ò»ÖÂ)×ÖÌåÎª2ºÅºÚÌå(È«ÎÄ³ýÌØ±ðÉùÃ÷Íâ£¬ ÍâÎÄÍ³Ò»ÓÃTimes New Roman) }
+\end{CJK}
+\vskip 5mm
+
+{\zihao{3}\begin{CJK*}{GBK}{fs}
+×÷ÕßÃû$^{1)}$\quad  ×÷ÕßÃû$^{2),3)}$ \quad ×÷ÕßÃû$^{3) }$($^*$×ÖÌåÎª3ºÅ·ÂËÎ*×÷Õß)\end{CJK*}}
+
+\vspace {5mm}
+\zihao{6}{\begin{CJK*}{GBK}{song}
+$^{1)}$(µ¥Î»È«Ãû ²¿ÃÅ(Ïµ)È«Ãû, ÊÐ(»òÖ±Ï½ÊÐ) ¹ú¼ÒÃû ÓÊÕþ±àÂë)
+*×ÖÌåÎª6ºÅËÎÌå*µ¥Î»
+\end{CJK*}}
+
+\zihao{6}{\begin{CJK*}{GBK}{song}
+$^{2)}$(µ¥Î»È«Ãû ²¿ÃÅ(Ïµ)È«Ãû, ÊÐ(»òÖ±Ï½ÊÐ) ¹ú¼ÒÃû
+ÓÊÕþ±àÂë)*ÖÐÓ¢ÎÄµ¥Î»Ãû³Æ¡¢×÷ÕßÐÕÃûÐëÒ»ÖÂ*
+\end{CJK*}}
+
+\zihao{6}{\begin{CJK*}{GBK}{song}
+$^{3)}$(µ¥Î»È«Ãû ²¿ÃÅ(Ïµ)È«Ãû, ÊÐ(»òÖ±Ï½ÊÐ) ¹ú¼ÒÃû ÓÊÕþ±àÂë)
+\end{CJK*}}
+
+\zihao{6}{\begin{CJK*}{GBK}{hei}
+ÂÛÎÄ¶¨¸åºó£¬×÷ÕßÊðÃû¡¢µ¥Î»ÎÞÌØÊâÇé¿ö²»ÄÜ±ä¸ü¡£Èô±ä¸ü£¬ÐëÌá½»Ç©ÕÂÉêÇë£¬¹ú¼ÒÃûÎªÖÐ¹ú¿ÉÒÔ²»Ð´£¬Ê¡»á³ÇÊÐ²»Ð´Ê¡µÄÃû³Æ£¬ÆäËû¹ú¼Ò±ØÐëÐ´¹ú¼ÒÃû¡£
+\end{CJK*}}
+
+\vskip 5mm
+{\centering
+\begin{tabular}{p{160mm}}
+\zihao{5-}{
+\setlength{\baselineskip}{16pt}\selectfont{
+\noindent\begin{CJK*}{GBK}{hei}Õª\quad Òª\quad \end{CJK*} \begin{CJK*}{GBK}{song}
+*ÖÐÎÄÕªÒªÄÚÈÝÖÃÓÚ´Ë´¦(Ó¢ÎÄÕªÒªÖÐÒªÓÐÕâÐ©ÄÚÈÝ)£¬×ÖÌåÎªÐ¡5ºÅËÎÌå¡£ÕªÒª¹±Ï×²¿·Ö£¬ÒªÓÐÊý¾ÝÖ§³Ö£¬²»Òª³öÏÖ``...´ó´óÌá¸ß''¡¢``...ÏÔÖø¸ÄÉÆ''µÈÃèÊö£¬ÕýÈ·µÄÃèÊöÊÇ``±È{\ldots}Ìá¸ßX{\%}''¡¢
+``ÔÚ{\ldots}ÉÏ¸ÄÉÆX{\%}''¡£*ÕªÒª
+
+\end{CJK*}\par}}\\[2mm]
+
+\zihao{5-}{\noindent
+\begin{CJK*}{GBK}{hei}¹Ø¼ü´Ê\end{CJK*} \quad \begin{CJK*}{GBK}{song}{*¹Ø¼ü´Ê£¨ÖÐÎÄ¹Ø¼ü×ÖÓëÓ¢ÎÄ¹Ø¼ü×Ö¶ÔÓ¦ÇÒÒ»ÖÂ£¬Ó¦ÓÐ5-7¸ö¹Ø¼ü´Ê)£»¹Ø¼ü´Ê£»¹Ø¼ü´Ê£»¹Ø¼ü´Ê*  }
+\end{CJK*}
+}\\[2mm]
+\zihao{5-}{\begin{CJK*}{GBK}{hei}ÖÐÍ¼·¨·ÖÀàºÅ\end{CJK*}	\begin{CJK*}{GBK}{song}
+TP\end{CJK*}\rm{\quad \quad \quad     }
+\begin{CJK*}{GBK}{hei}DOIºÅ:\end{CJK*}\begin{CJK*}{GBK}{song}
+*Í¶¸åÊ±²»Ìá¹©DOIºÅ\end{CJK*}}
+\end{tabular}}
+
+\vskip 7mm
+
+\begin{center}
+\zihao{3}{ {\begin{CJK*}{GBK}{hei}Title *£¨ÖÐÓ¢ÎÄÌâÄ¿Ò»ÖÂ)×ÖÌåÎª4ºÅTimes New Roman,¼Ó´Ö* Title\end{CJK*}}}\\
+\vspace {5mm}
+\zihao{5}{ {\begin{CJK*}{GBK}{hei}NAME Name-Name$^{1)}$ NAME Name$^{2)}$ NAME Name-Name$^{3)}$ *×ÖÌåÎª5ºÅTimes
+new Roman*Name\end{CJK*}
+}}\\
+\vspace {2mm}
+\zihao{6}{\begin{CJK*}{GBK}{hei}{$^{1)}$(Department of ****, University, City ZipCode, China) *×ÖÌåÎª6ºÅTimes
+new Roman* Depart.Correspond}\end{CJK*}}
+
+\zihao{6}{\begin{CJK*}{GBK}{hei}{$^{2)}$(Department of ****, University, City ZipCode)*ÖÐ¹ú²»Ð´¹ú¼ÒÃû*}\end{CJK*}}
+
+\zihao{6}{\begin{CJK*}{GBK}{hei}{$^{3)}$(Department of ****, University, City ZipCode, country)*Íâ¹úÐ´¹ú¼ÒÃû*}\end{CJK*}}
+
+
+
+\end{center}
+
+\begin{tabular}{p{160mm}}
+\zihao{5}{
+\setlength{\baselineskip}{18pt}\selectfont{
+{\bf Abstract}\quad \begin{CJK*}{GBK}{hei}(\textbf{500Ó¢ÎÄµ¥´Ê£¬ÄÚÈÝ°üº¬ÖÐÎÄÕªÒªµÄÄÚÈÝ}).
+×ÖÌåÎªTimes new Roman,×ÖºÅ5ºÅ* Abstract\end{CJK*}
+\par}}\\
+
+\setlength{\baselineskip}{18pt}\selectfont{
+\zihao{5}{\noindent Do not modify the amount of space before and after the artworks. One- or two-column format artworks are preferred. and Tables, create a new break line and paste the resized artworks where desired. Do not modify the amount of space before and after the artworks. One- or two-column format artworks are preferred. All Schemes, Equations, Figures, and Tables should be mentioned in the text consecutively and numbered with Arabic numerals, and appear below where they are mentioned for the first time in the main text. To insert Schemes, Equations, Figures, and Tables, create a new break line and paste the resized artworks where desired. Do not modify the amount of space before and after the artworks. One- or two-column format artworks are preferred.Do not modify the amount of space before and after the artworks. One- or two-column format artworks are preferred. and Tables, create a new break line and paste the resized artworks where desired. Do not modify the amount of space before and after the artworks. One- or two-column format artworks are preferred. All Schemes, Equations, Figures, and Tables should be mentioned in the text consecutively and numbered with Arabic numerals, and appear below where they are mentioned for the first time in the main text.
+
+\vspace {5mm}
+{\bf Keywords}\quad \begin{CJK*}{GBK}{hei}ÖÐÎÄ¹Ø¼ü×ÖÓëÓ¢ÎÄ¹Ø¼ü×Ö¶ÔÓ¦ÇÒÒ»ÖÂ£¬\textbf{²»ÒªÓÃÓ¢ÎÄËõÐ´});
+key word; key word; key word* *×ÖÌåÎª5ºÅTimes new Roman * Key words\end{CJK*}}\par}
+\end{tabular}
+
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{p{0.05cm}p{16.15cm}}
+\multicolumn{2}{l}{\rule[4mm]{40mm}{0.1mm}}\\[-3mm]
+&\begin{CJK*}{GBK}{gbsn}
+ÊÕ¸åÈÕÆÚ£º\quad \quad -\quad -\quad £»×îÖÕÐÞ¸Ä¸åÊÕµ½ÈÕÆÚ£º\quad \quad -\quad -\quad .*Í¶¸åÊ±²»ÌîÐ´´ËÏî*. ±¾¿ÎÌâµÃµ½¡­ ¡­»ù½ðÖÐÎÄÍêÕûÃû³Æ(No.ÏîÄ¿ºÅ)¡¢¡­ ¡­»ù½ðÖÐÎÄÍêÕûÃû³Æ(No.ÏîÄ¿ºÅ)¡¢¡­ ¡­ »ù½ðÖÐÎÄÍêÕûÃû³Æ(No.ÏîÄ¿ºÅ)×ÊÖú.×÷ÕßÃû1(Í¨ÐÅ×÷Õß)£¬ÐÔ±ð£¬xxxxÄêÉú£¬Ñ§Î»(»òÄ¿Ç°Ñ§Àú)£¬Ö°³Æ£¬ÊÇ/·ñ¼ÆËã»úÑ§»á(CCF)»áÔ±£¨Ìá¹©»áÔ±ºÅ),Ö÷ÒªÑÐ¾¿ÁìÓòÎª*****¡¢****.E-mail: **************.×÷ÕßÃû2£¨Í¨ÐÅ×÷Õß)£¬ÐÔ±ð£¬xxxxÄêÉú£¬Ñ§Î»(»òÄ¿Ç°Ñ§Àú)£¬Ö°³Æ£¬ÊÇ/·ñ¼ÆËã»úÑ§»á(CCF)»áÔ±£¨Ìá¹©»áÔ±ºÅ),Ö÷ÒªÑÐ¾¿ÁìÓòÎª*****¡¢****.E-mail: **************. ×÷ÕßÃû3£¨Í¨ÐÅ×÷Õß)£¬ÐÔ±ð£¬xxxxÄêÉú£¬Ñ§Î»(»òÄ¿Ç°Ñ§Àú)£¬Ö°³Æ£¬ÊÇ/·ñ¼ÆËã»úÑ§»á(CCF)»áÔ±£¨Ìá¹©»áÔ±ºÅ),Ö÷ÒªÑÐ¾¿ÁìÓòÎª*****¡¢****.E-mail: **************.(¸ø³öµÄµç×ÓÓÊ¼þµØÖ·Ó¦²»»áÒò³ö¹ú¡¢±ÏÒµ¡¢¸ü»»¹¤×÷µ¥Î»µÈÔ­Òò¶ø±ä¶¯¡£Çë¸ø³öËùÓÐ×÷ÕßµÄµç×ÓÓÊ¼þ)
+µÚ1×÷ÕßÊÖ»úºÅÂë(Í¶¸åÊ±±ØÐëÌá¹©£¬ÒÔ±ã½ô¼±ÁªÏµ£¬·¢±íÊ±»áÉ¾³ý): ¡­ ¡­, E-mail: ¡­ ¡­*´Ë²¿·Ö6ºÅËÎÌå*
+\end{CJK*}
+\end{tabular}\end{table*}
+\clearpage\clearpage
+\begin{strip}
+\vspace {-13mm}
+\end{strip}
+    \linespread{1.15}
+\begin{CJK*}{GBK}{hei}
+\zihao{5}
+\vskip 1mm
+\section{Ò»¼¶±êÌâ*×ÖÌåÎª4ºÅºÚÌå*±êÌâ1}
+\textbf{¶ÔÍ¶¸åµÄ»ù±¾ÒªÇó}£º
+\end{CJK*}
+
+\begin{CJK*}{GBK}{song}
+(1) ÑÐ¾¿ÐÔÂÛÎÄÖ÷ÌåÓ¦°üÀ¨ÒýÑÔ(ÖØµãÂÛÊöÑÐ¾¿µÄ¿ÆÑ§ÎÊÌâ¡¢ÒâÒå¡¢½â¾öË¼Â·¡¢¼ÛÖµ¡¢¹±Ï×µÈ)¡¢Ïà¹Ø¹¤×÷(ÎªÓëÒýÑÔ²¿·Ö¶ÀÁ¢µÄÒ»¸öÕÂ½Ú)¡¢Ö÷Òª³É¹ûÂÛÊö¡¢¹Ø¼üÊµÏÖ¼¼Êõ¡¢ÑéÖ¤(¶Ô±ÈÊµÑé»òÀíÂÛÖ¤Ã÷)¡¢½áÂÛ(½áÊøÓï)µÈÄÚÈÝ£»ÏµÍ³ÊµÏÖ»òÊµÑéÓ¦ÓÐ¹Ø¼üµãµÄÏêÏ¸ÂÛÊö£¬ÒÔ±ã¶ÁÕßÄÜ¹»ÖØ¸´ÊµÏÖÂÛÎÄËùÊö³É¹û¡£ÊµÑéÓ¦ÓÐ¾ßÌåµÄÊµÑé»·¾³ÉèÖÃ¡¢È«ÃæÏ¸ÖÂµÄÊý¾Ý¶Ô±È·ÖÎö¡£
+
+(2) ×ÛÊöÓ¦°üÀ¨ÒýÑÔ¡¢ÎÊÌâÓëÌôÕ½¡¢ÑÐ¾¿ÏÖ×´·ÖÎö¡¢Î´À´ÑÐ¾¿·½Ïò¡¢½áÂÛµÈÄÚÈÝ¡£ÒÔ·ÖÎö¡¢¶Ô±ÈÎªÖ÷£¬±ÜÃâ¶ÑÆöÎÄÏ×»òÒ»°ãÐÔ½éÉÜ¡¢ÐðÊö¡£
+
+(3) ¶¨ÀíÖ¤Ã÷¡¢¹«Ê½ÍÆµ¼¡¢´óÆª·ùµÄÊýÑ§ÂÛÊö¡¢Ô­Ê¼Êý¾Ý£¬·Åµ½ÂÛÎÄ×îºóµÄ¸½Â¼ÖÐ¡£
+
+{\bf ¸å¼þÌá½»Ê±µÄ»ù±¾ÒªÇó£º}
+
+(1) ±¾Ä£°åÖÐÒªÇóµÄ¸÷ÏîÄÚÈÝÕýÈ·ÆëÈ«£¬ÎÞÒÅÂ©£»
+
+(2) Óï¾äÍ¨Ë³£¬ÎÞÖÐÎÄ¡¢Ó¢ÎÄÓï·¨´íÎó£¬Ò×ÓÚÔÄ¶ÁÀí½â£¬·ûºÅÊ¹ÓÃÕýÈ·£¬Í¼¡¢±íÇåÎúÎÞÎó£»
+
+(3) ÔÚÑ§Êõ¡¢¼¼ÊõÉÏ£¬ÂÛÎÄÄÚÈÝÕýÈ·ÎÞÎó£¬¸÷ÏîÄÚÈÝÈ·¶¨¡£
+
+{\begin{CJK*}{GBK}{hei}\subsection{¶þ¼¶±êÌâ *×ÖÌåÎª5ºÅºÚÌå*±êÌâ2}\end{CJK*}}
+\subsubsection{Èý¼¶±êÌâ *×ÖÌåÎª5ºÅËÎÌå*±êÌâ3}
+*ÕýÎÄ²¿·Ö, ×ÖÌåÎª5ºÅËÎÌå* ÕýÎÄÎÄ×Ö
+
+\textbf{ÕýÎÄÎÄ×ÖÒªÇóÓï¾äÍ¨Ë³£¬ÎÞÓï·¨´íÎó£¬½á¹¹ºÏÀí£¬ÌõÀíÇå³þ£¬²»Ó°ÏìÉó¸åÈË¡¢¶ÁÕßÔÄ¶ÁÀí½âÈ«ÎÄÄÚÈÝ¡£ÒÔÏÂ¼¸ÀàÎÊÌâÇë×÷ÕßÃÇÌØ±ð×¢Òâ}£º
+
+1) ÎÄÕÂÌâÄ¿Ó¦Ã÷È··´Ó³ÎÄÕÂµÄË¼ÏëºÍ·½·¨£»ÎÄ×ÖÁ÷³©£¬±íÊöÇå³þ£»
+
+2) ÖÐÎÄÎÄ×Ö¡¢Ó¢ÎÄ±í´ïÎÞÓï·¨´íÎó£»
+
+3) ¹«Ê½ÖÐÎÞ·ûºÅ¡¢±í´ïÊ½µÄÊèÂ©£¬Ã»ÓÐÍ¬Ò»¸ö·ûºÅ±íÊ¾Á½ÖÖÒâË¼µÄÇé¿ö£»
+
+4) ÊýÑ§ÖÐÊ¹ÓÃµÄ·ûºÅ¡¢º¯ÊýÃûÓÃÐ±Ìå£»
+
+5) Ê¹ÓÃµÄÁ¿·ûºÏ·¨¶¨¼ÆÁ¿µ¥Î»±ê×¼£»
+
+6) Ê¸Á¿ÎªºÚÌå£¬±êÁ¿Îª°×Ìå£»
+
+7) ±äÁ¿»ò±íÊ¾±ä»¯µÄÁ¿ÓÃÐ±Ìå£»
+
+8) Í¼±í¹æ·¶£¬Á¿¡¢Ïß¡¢ÐòÎÞÎó£¬Î»ÖÃÕýÈ·(Í¼±í±ØÐëÔÚÕýÎÄÖÐÓÐËù±íÊöºó³öÏÖ£¬¼´{\ldots}ÈçÍ¼1ËùÊ¾)(×¢Òâ×Ý¡¢ºá×ø±êÓ¦ÓÐ×ø±êÃû³ÆºÍ¿Ì¶ÈÖµ)¡£
+
+9) ÁÐ³öµÄ²Î¿¼ÎÄÏ×±ØÐëÔÚÎÄÖÐ°´Ë³ÐòÒýÓÃ£¬¼´²Î¿¼ÎÄÏ×Ë³ÐòÓëÒýÓÃË³ÐòÒ»ÖÂ£¬¸÷ÏîÐÅÏ¢ÆëÈ«(¸ñÊ½¼û²Î¿¼ÎÄÏ×²¿·Ö)£»
+
+10) Ê×´Î³öÏÖµÄËõÐ´ÐèÐ´Ã÷È«³Æ£¬Ê×´Î³öÏÖµÄ·ûºÅÐè×÷³ö½âÊÍ¡£
+
+11) Í¼µÄÍ¼ÀýËµÃ÷¡¢×ø±êËµÃ÷È«²¿ÓÃÖÐÎÄ»òÁ¿·ûºÅ¡£
+
+\textbf{12) Í¼Ó¦ÎªÊ¸Á¿Í¼¡£}
+
+13) ±íÖÐ±íÍ·ÎÄ×Ö²ÉÓÃÖÐÎÄ¡£
+
+14) ¹«Ê½³ß´ç£º
+
+±ê×¼£º10.5°õ
+
+ÏÂ±ê/ÉÏ±ê£º5.8°õ
+
+´ÎÏÂ±ê/ÉÏ±ê£º4.5°õ
+
+·ûºÅ£º16°õ
+
+´Î·ûºÅ£º10.5°õ
+
+15) ×éºÏµ¥Î»²ÉÓÃ±ê×¼¸ñÊ½£¬Èç£º``pJ/bit/m$^{4}$''Ó¦Îª ``pJ/(bit$\cdot
+$m$^{4})$''
+
+{\begin{CJK*}{GBK}{hei}\textbf{¶¨Àí1}.\end{CJK*}}\quad ******. *¶¨ÀíÄÚÈÝ.*
+
+[``¶¨Òå''¡¢``¼ÙÉè''¡¢``¹«Àí''¡¢``ÒýÀí''µÈµÄÅÅ°æ¸ñÊ½Óë´ËÏàÍ¬£¬ÏêÏ¸¶¨ÀíÖ¤Ã÷¡¢¹«Ê½¿É·ÅÔÚ¸½Â¼ÖÐ]
+
+{\begin{CJK*}{GBK}{fs}Ö¤Ã÷\end{CJK*}}.\quad  *Ö¤Ã÷¹ý³Ì.* [``Àý x''µÈµÄÅÅ°æ¸ñÊ½ÏàÍ¬]
+
+\rightline {Ö¤±Ï.}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=3.15in,height=1.98in]{CJC1.pdf}}
+Í¼X\quad  Í¼Æ¬ËµÃ÷ *×ÖÌåÎªÐ¡5ºÅ£¬Í¼Æ¬Ó¦ÎªºÚ°×Í¼£¬Í¼ÖÐµÄ×ÓÍ¼ÒªÓÐ×ÓÍ¼ËµÃ÷*
+\label{fig1}
+\end{figure}
+
+\begin{table}[htbp]
+\centering {\begin{CJK*}{GBK}{hei}±íX\quad ±íËµÃ÷ *±íËµÃ÷²ÉÓÃºÚÌå*\end{CJK*}}
+\vspace {-2.5mm}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+*Ê¾Àý±í¸ñ*&*µÚ1ÐÐÎª±íÍ·,±íÍ·ÒªÓÐÄÚÈÝ* \\
+\hline
+&
+ \\
+&
+ \\
+&
+ \\
+&
+ \\
+\bottomrule
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
+
+\begin{CJK*}{GBK}{hei}¹ý³ÌX.\end{CJK*}\quad ¹ý³ÌÃû³Æ
+
+{\zihao{5-}*¡¶¼ÆËã»úÑ§±¨¡·µÄ·½·¨¹ý³ÌÃèÊö×ÖÌåÎªÐ¡5ºÅËÎÌå£¬IF¡¢THENµÈÎ±´úÂë¹Ø¼ü´ÊÈ«²¿ÓÃ´óÐ´×ÖÄ¸£¬±äÁ¿ºÍº¯ÊýÃû³ÆÓÃÐ±Ìå*}
+
+
+\begin{CJK*}{GBK}{hei}Ëã·¨\textbf{Y}\end{CJK*}.\quad Ëã·¨Ãû³Æ.
+\zihao{5-}{
+
+\noindent ÊäÈë£º{\ldots} {\ldots}
+
+\noindent Êä³ö£º{\ldots} {\ldots}
+
+*¡¶¼ÆËã»úÑ§±¨¡·µÄËã·¨ÃèÊö×ÖÌåÎªÐ¡5ºÅËÎÌå, IF¡¢THENµÈÎ±´úÂë¹Ø¼ü´ÊÈ«²¿ÓÃ´óÐ´×ÖÄ¸£¬±äÁ¿ºÍº¯ÊýÃû³ÆÓÃÐ±Ìå*}
+
+\vspace {3mm}
+\zihao{5}{
+\noindent \begin{CJK*}{GBK}{hei}ÖÂ\quad Ð»\end{CJK*}\quad \begin{CJK*}{GBK}{kai} *ÖÂÐ»ÄÚÈÝ.* ÖÂÐ»\end{CJK*}}
+
+
+\vspace {5mm}
+\centerline
+{\zihao{5}
+\begin{CJK*}{GBK}{hei}²Î~¿¼~ÎÄ~Ï×\end{CJK*}}
+
+\begin{thebibliography}{99}
+\zihao{5-} \addtolength{\itemsep}{-1em}
+\vspace {1.5mm}
+
+\bibitem[1]{1}
+ÍøÉÏµÄÎÄÏ×(¾ÙÀý£ºThe Cooperative
+Association for Internet Data Analysis(CAIDA),http://www.caida.org/data
+2010,7,18) \textbf{*Çë²ÉÓÃ½Å×¢·ÅÓÚÕýÎÄ³öÏÖ´¦£¬Ã¿Ò³µÄ½Å×¢´Ó1¿ªÊ¼±àÐòºÅ*}\footnote{The Cooperative Association for Internet Data
+Analysis (CAIDA), http://www.caida.org/data 2010, 7, 18}
+
+\bibitem[2]{2} ÖÐÎÄµÄ²Î¿¼ÎÄÏ×Ðè¸ø³öÖÐÓ¢ÎÄ¶ÔÕÕ¡£ÐÎÊ½Èç[3]¡£
+
+\bibitem[3]{3} Zhou Yong-Bin, Feng Deng-Guo. Design and analysis of cryptographic
+protocols for RFID. Chinese Journal of Computers, 2006, 29(4): 581-589 (in
+Chinese) \newline
+(ÖÜÓÀ±ò, ·ëµÇ¹ú. RFID°²È«Ð­ÒéµÄÉè¼ÆÓë·ÖÎö. ¼ÆËã»úÑ§±¨, 2006, 29(4): 581-589)
+
+\bibitem[4]{4} ÆÚ¿¯¡¢»áÒé¡¢Êé¼®Ãû³Æ²»ÄÜÓÃËõÐ´¡£
+
+\bibitem[5]{5} ×÷Õß(Íâ¹úÈËÐÕÔÚÇ°£¬ÃûÔÚºó¿ÉËõÐ´, ºóÍ¬).
+ÌâÄ¿(Ó¢ÎÄÌâÄ¿µÚÒ»×ÖÄ¸´óÐ´£¬ÆäËü¾ùÐ¡Ð´)£º¸±±êÌâ(Èç¹ûÓÐ). ¿¯Ãû(È«³Æ), Äê,
+¾í(ÆÚ): Ò³Âë \textbf{*ÆÚ¿¯ÂÛÎÄ¸ñÊ½*}
+
+\bibitem[6]{6}×÷Õß.
+ÎÄÕÂÌâÄ¿(Ó¢ÎÄÌâÄ¿µÚ1×ÖÄ¸´óÐ´£¬ÆäËü¾ùÐ¡Ð´)£º¸±±êÌâ(Èç¹ûÓÐ)//Proceedings of
+the {\ldots} (»áÒéÃû³Æ). »áÒéÕÙ¿ª³ÇÊÐ, »áÒéÕÙ¿ª³ÇÊÐËùÔÚ¹ú¼Ò, Äê: Ò³Âë
+\textbf{*»áÒéÂÛÎÄ¼¯ÂÛÎÄ¸ñÊ½*}
+
+\bibitem[7]{7}×÷Õß. ÎÄÕÂÌâÄ¿(Ó¢ÎÄÌâÄ¿µÚÒ»×ÖÄ¸´óÐ´, ÆäËü¾ùÐ¡Ð´):
+¸±±êÌâ(Èç¹ûÓÐ)//±àÕß. ÎÄ¼¯±êÌâ. ³ö°æµØ: ³ö°æÉç, ³ö°æÄê: Ò³Âë
+\textbf{*ÎÄ¼¯¸ñÊ½*}
+
+\bibitem[8]{8}×÷Õß. ÊéÃû: ¸±±êÌâ(Èç¹ûÓÐ). °æ´Î(³õ°æ²»Ð´). ³ö°æÉçµØµã: ³ö°æÉç,
+³ö°æÄê \textbf{*Êé¼®¸ñÊ½*}
+
+\bibitem[9]{9}×÷Õß. ÎÄÕÂÌâÄ¿[²©Ê¿Ñ§Î»ÂÛÎÄ/Ë¶Ê¿Ñ§Î»ÂÛÎÄ]. µ¥Î»Ãû³Æ,µ¥Î»µØµã, Äê
+\textbf{*Ñ§Î»ÂÛÎÄ¸ñÊ½*}
+
+\bibitem[10]{10}×÷Õß. ÎÄÕÂÌâÄ¿(Ó¢ÎÄÌâÄ¿µÚÒ»×ÖÄ¸´óÐ´£¬ÆäËü¾ùÐ¡Ð´). µ¥Î»µØµã: µ¥Î»,
+¼¼Êõ±¨¸æ: ±¨¸æ±àºÅ, Äê \textbf{*¼¼Êõ±¨¸æ*}
+
+\bibitem[11]{11}×¨ÀûÓµÓÐÈË. ×¨ÀûÃû³Æ£¬×¨ÀûÊÚÈ¨¹ú¼Ò£¬×¨ÀûÊÚÈ¨ÈÕÆÚ
+\textbf{*¼¼Êõ×¨Àû*}
+  \end{thebibliography}
+
+\begin{strip}
+\end{strip}
+
+\noindent {\zihao{5}\bf{¸½Â¼X}.}
+
+{\zihao{5-}\setlength\parindent{2em}
+*\textbf{¸½Â¼ÄÚÈÝ}ÖÃÓÚ´Ë´¦£¬×ÖÌåÎªÐ¡5ºÅËÎÌå¡£¸½Â¼ÄÚÈÝ°üÀ¨£º\textbf{ÏêÏ¸µÄ¶¨ÀíÖ¤Ã÷¡¢¹«Ê½ÍÆµ¼¡¢Ô­Ê¼Êý¾Ý}µÈ*}
+
+\begin{strip}
+\end{strip}
+
+\begin{biography}[yourphotofilename.jpg]
+\noindent
+\textbf{First A. Author}\ \ *¼ÆËã»úÑ§±¨µÚ1×÷ÕßÌá¹©ÕÕÆ¬µç×ÓÍ¼Æ¬£¬³ß´çÎª1´ç¡£Ó¢ÎÄ×÷Õß½éÉÜÄÚÈÝ°üÀ¨£º³öÉúÄê,Ñ§Î»(»òÄ¿Ç°Ñ§Àú),Ö°³Æ,Ö÷ÒªÑÐ¾¿ÁìÓò(\textbf{ÓëÖÐÎÄ×÷Õß½éÉÜÖÐµÄÑÐ¾¿·½ÏòÒ»ÖÂ}).*
+*×ÖÌåÎªÐ¡5ºÅTimes New Roman*
+
+\end{biography}
+
+\begin{biography}[yourphotofilename.jpg]
+\noindent
+\textbf{Second B. Author} *Ó¢ÎÄ×÷Õß½éÉÜÄÚÈÝ°üÀ¨£º³öÉúÄê,Ñ§Î»(»òÄ¿Ç°Ñ§Àú),Ö°³Æ,Ö÷ÒªÑÐ¾¿ÁìÓò(\textbf{ÓëÖÐÎÄ×÷Õß½éÉÜÖÐµÄÑÐ¾¿·½ÏòÒ»ÖÂ})¡£*
+*×ÖÌåÎªÐ¡5ºÅTimes New Roman*
+\end{biography}
+\begin{strip}
+\end{strip}
+\zihao{5}
+\noindent \textbf{Background}
+
+\zihao{5-}{
+\setlength\parindent{2em}
+*ÂÛÎÄ±³¾°½éÉÜÎª\textbf{Ó¢ÎÄ}£¬×ÖÌåÎªÐ¡5ºÅTimes New RomanÌå*
+
+ÂÛÎÄºóÃæÎª400µ¥´Ê×óÓÒµÄÓ¢ÎÄ±³¾°½éÉÜ¡£½éÉÜµÄÄÚÈÝ°üÀ¨£º
+
+±¾ÎÄÑÐ¾¿µÄÎÊÌâÊôÓÚÄÄÒ»¸öÁìÓòµÄÊ²Ã´ÎÊÌâ¡£¸ÃÀàÎÊÌâÄ¿Ç°¹ú¼ÊÉÏ½â¾öµ½Ê²Ã´³Ì¶È¡£
+
+±¾ÎÄ½«ÎÊÌâ½â¾öµ½Ê²Ã´³Ì¶È¡£
+
+¿ÎÌâËùÊôµÄÏîÄ¿¡£
+
+ÏîÄ¿µÄÒâÒå¡£
+
+±¾ÑÐ¾¿ÈºÌåÒÔÍùÔÚÕâ¸ö·½ÏòÉÏµÄÑÐ¾¿³É¹û¡£
+
+±¾ÎÄµÄ³É¹ûÊÇ½â¾ö´ó¿ÎÌâÖÐµÄÄÄÒ»²¿·Ö£¬Èç¹ûÉæ¼°863$\backslash
+$973ÒÔ¼°ÆäÏîÄ¿¡¢»ù½ð¡¢ÑÐ¾¿¼Æ»®£¬×¢ÒâÕâÐ©ÏîÄ¿µÄÓ¢ÎÄÃû³ÆÓ¦ÊéÐ´ÕýÈ·¡£}
+
+\end{CJK*}
+\end{document}
+
+
